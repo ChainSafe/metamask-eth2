@@ -1,0 +1,25 @@
+{
+  "name": "metamask-eth2",
+  "version": "0.0.1",
+  "description": "A metamask plugin for eth2",
+  "main": "index.js",
+  "repository": "https://github.com/chainsafe/metamask-eth2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "web3Wallet": {
+    "bundle": {
+      "local": "dist/bundle.js",
+      "url": "http://localhost:8081/dist/bundle.js"
+    },
+    "initialPermissions": {
+      "alert": {}
+    }
+  },
+  "dependencies": {
+    "eth-json-rpc-errors": "^1.1.0",
+    "noble-bls12-381": "^0.2.3"
+  }
+}
